@@ -15,5 +15,5 @@ esquinas[1,2,3,4,5,6,7,8] + aristas[1,2,3,4,5,6,7,8,9,10,11,12]
 
 esquinas: [ryb,rgy,rwg,rbw, oby,oyg,ogw,owb]
 
-aristas: []
+aristas: [ry,rg,rw,rb, gy,gw,wb,by, oy,og,ow,ob]
 """

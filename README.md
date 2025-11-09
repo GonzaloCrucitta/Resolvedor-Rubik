@@ -2,12 +2,12 @@ este proyecto busca resolver cualquier cubo de rubik 3x3, buscando el camino opt
 se usa una orientacion fija del cubo y solo se guarda las esquinas y aristas de cada estado
 
 Caras:
-frontal: blanca (w)
-derecha: verde (g)
-superior: roja (r)
-izquierda: azul (b)
-inferior: naranja (o)
-trasera: amarillo (y)
+frontal: roja (r)
+derecha: azul (b)
+superior: blanca (w)
+izquierda: verde (g)
+inferior: amarilla (y)
+trasera: naranja (o)
 
 Arreglo de posiciones ordenado:
 esquinas, aristas
