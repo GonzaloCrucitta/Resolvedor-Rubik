@@ -9,9 +9,12 @@ izquierda: verde (g)
 inferior: amarilla (y)
 trasera: naranja (o)
 
-Arreglo de posiciones ordenado:
-esquinas, aristas
-[1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,9,10,11,12]
+cubo = {
+        "esquinas_pos": [1,2,3,4,5,6,7,8],
+        "esquinas_ori": [0,0,0,0,0,0,0,0],
+        "aristas_pos": [1,2,3,4,5,6,7,8,9,10,11,12],
+        "aristas_ori": [0,0,0,0,0,0,0,0,0,0,0,0]
+    }
 
 esquinas: [ryb,rgy,rwg,rbw, oby,oyg,ogw,owb]
 
