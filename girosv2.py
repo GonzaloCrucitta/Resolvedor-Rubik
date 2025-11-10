@@ -288,16 +288,72 @@ def prueba_inversos_L():
     L2(cubo["esquinas_pos"], cubo["esquinas_ori"], cubo["aristas_pos"], cubo["aristas_ori"])
     Lp(cubo["esquinas_pos"], cubo["esquinas_ori"], cubo["aristas_pos"], cubo["aristas_ori"])
     print(cubo == cubo0)
+
+def prueba_sexy(): #sexy move
+    cubo0 = {
+        "esquinas_pos": list(range(8)),
+        "esquinas_ori": [0]*8,
+        "aristas_pos": list(range(12)),
+        "aristas_ori": [0]*12
+    }
+    cubo = {k: v.copy() for k, v in cubo0.items()}
+    ep,eo,ap,ao = cubo["esquinas_pos"], cubo["esquinas_ori"], cubo["aristas_pos"], cubo["aristas_ori"]
+    for i in range(6):
+        R(ep,eo,ap,ao)
+        U(ep,eo,ap,ao)
+        Rp(ep,eo,ap,ao)
+        Up(ep,eo,ap,ao)
+    print(cubo == cubo0)
+
+def prueba_sexy2(): #sexy move usando F y U
+    cubo0 = {
+        "esquinas_pos": list(range(8)),
+        "esquinas_ori": [0]*8,
+        "aristas_pos": list(range(12)),
+        "aristas_ori": [0]*12
+    }
+    cubo = {k: v.copy() for k, v in cubo0.items()}
+    ep,eo,ap,ao = cubo["esquinas_pos"], cubo["esquinas_ori"], cubo["aristas_pos"], cubo["aristas_ori"]
+    for i in range(6):
+        F(ep,eo,ap,ao)
+        U(ep,eo,ap,ao)
+        Fp(ep,eo,ap,ao)
+        Up(ep,eo,ap,ao)
+    print(cubo == cubo0)
+def prueba_patron_3era_Capa():
+    cubo0 = {
+        "esquinas_pos": list(range(8)),
+        "esquinas_ori": [0]*8,
+        "aristas_pos": list(range(12)),
+        "aristas_ori": [0]*12
+    }
+    cubo = {k: v.copy() for k, v in cubo0.items()}
+    ep,eo,ap,ao = cubo["esquinas_pos"], cubo["esquinas_ori"], cubo["aristas_pos"], cubo["aristas_ori"]
+    for i in range(3):
+        R(ep,eo,ap,ao)
+        Up(ep,eo,ap,ao)
+        Lp(ep,eo,ap,ao)
+        U(ep,eo,ap,ao)
+        Rp(ep,eo,ap,ao)
+        Up(ep,eo,ap,ao)
+        L(ep,eo,ap,ao)
+        U(ep,eo,ap,ao)
+        
+    print(cubo == cubo0)
+
 def pruebas():
     print("iniciando pruebas...")
+    prueba_tiempos()
     prueba_inversos_F()
     prueba_inversos_B()
     prueba_inversos_U()
     prueba_inversos_D()
     prueba_inversos_R()
     prueba_inversos_L()
-    prueba_tiempos()
+    prueba_sexy()
+    prueba_sexy2()
+    prueba_patron_3era_Capa()
 
-#pruebas()
+pruebas()
 
 #0.1304 -> 0.2545 por tener orientaciones y un diseño distinto de cubo
