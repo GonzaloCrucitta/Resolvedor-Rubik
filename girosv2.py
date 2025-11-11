@@ -354,6 +354,6 @@ def pruebas():
     prueba_sexy2()
     prueba_patron_3era_Capa()
 
-pruebas()
+#pruebas()
 
 #0.1304 -> 0.2545 por tener orientaciones y un diseño distinto de cubo
