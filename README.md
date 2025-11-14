@@ -10,9 +10,9 @@ inferior: amarilla (y)
 trasera: naranja (o)
 
 cubo = {
-        "esquinas_pos": [1,2,3,4,5,6,7,8],
+        "esquinas_pos": [0,1,2,3,4,5,6,7],
         "esquinas_ori": [0,0,0,0,0,0,0,0],
-        "aristas_pos": [1,2,3,4,5,6,7,8,9,10,11,12],
+        "aristas_pos": [0,1,2,3,4,5,6,7,8,9,10,11],
         "aristas_ori": [0,0,0,0,0,0,0,0,0,0,0,0]
     }
 
